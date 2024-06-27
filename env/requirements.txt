@@ -1,0 +1,16 @@
+torch
+transformers
+accelerate
+bitsandbytes
+langchain
+langgraph
+langchain-community
+langchain-huggingface
+mysql-connector-python
+psycopg2
+langserve
+langgraph
+fastapi
+matplotlib
+python-dotenv
+python-box

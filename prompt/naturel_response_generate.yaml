@@ -1,0 +1,41 @@
+_type: prompt
+input_types: {}
+input_variables:
+- query
+- sql_response
+- tables_schema
+- user_question
+metadata: null
+name: null
+output_parser: null
+partial_variables: {}
+tags: null
+template: '
+
+  <|begin_of_text|>
+
+  <|start_header_id|>user<|end_header_id|>
+
+  Generate the summarize of SQL response in human understandable language based on 
+  the table schema below, question, sql query, and sql response:
+
+
+  DDL statements:
+
+  `{tables_schema}`
+
+
+  Question: `{user_question}`
+
+  SQL Query: `{query}`
+
+  SQL Query result: `{sql_response}`
+
+  <|eot_id|>
+
+
+  <|start_header_id|>assistant<|end_header_id|>
+
+  '
+template_format: f-string
+validate_template: false

@@ -1,0 +1,42 @@
+_type: prompt
+input_types: {}
+input_variables:
+- error_message
+- program
+metadata: null
+name: null
+output_parser: null
+partial_variables: {}
+tags: null
+template: '
+
+  <|begin_of_text|>
+
+  <|start_header_id|>system<|end_header_id|>
+
+  You are a Python programming expert and your responsibility to fixing program errors
+  and respond error free code.
+
+  Do not give multiple answers.
+
+  Do not give any explanation along with program, just return only error free program
+  as a response.
+
+  Do not include ``` in the response and make sure that response program is proper
+  left intended and left aligned.
+  
+  Do not include plt.show() in the program and do not include logic to print or visualize the image.
+
+
+  <|start_header_id|>user<|end_header_id|>
+
+  Carefully analyze the program `{program}` and error message ''{error_message}''.
+
+  <|eot_id|>
+
+
+  <|start_header_id|>assistant<|end_header_id|>
+
+  '
+template_format: f-string
+validate_template: false

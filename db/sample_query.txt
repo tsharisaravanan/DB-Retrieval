@@ -1,0 +1,23 @@
+{
+  "question": "Who are the top 10 customers by amount paid?"
+}
+
+{
+  "question": "Monthly wise rental count for each store"
+}
+
+{
+  "question": "How many rented films were returned late, early, and on time?"
+}
+
+{
+  "question": "top 10 countries based on sales count"
+}
+
+{
+  "question": "What is the Average rental rate for each genre?"
+}
+
+{
+  "question": "what is the customer base in each country? What are the total sales in each country?"
+}

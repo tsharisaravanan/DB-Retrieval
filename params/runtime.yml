@@ -1,0 +1,23 @@
+flow:
+    model: Ollama
+
+SQLDatabase:
+    db_type: postgresql
+    domain: dpg-cpfd747109ks73bhof0g-a.oregon-postgres.render.com
+    user_name: hari
+    password: tMPioMsx9geHHnz4UBXSp8pzzUMW9arP
+    db_name: knowledgebase
+    no_sample_records: 0
+
+LLM:
+    HuggingFace:
+        model_name: meta-llama/Meta-Llama-3-8B-Instruct
+        temperature: 0.0001
+        top_p: 0.95
+        do_sample: True
+        add_inst: False
+        repetition_penalty: 1.15
+    Ollama:
+        model_name: llama3:8b-instruct-q8_0
+        temperature: 0.0001
+        top_p: 0.95
